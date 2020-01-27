@@ -10,7 +10,7 @@
 
 * UFO-level-2 
 
-	-CLick reset to get the full table.
+	-Click reset to get the full table.
 
 	-To apply filter, enter/select the value and click filter.
 
