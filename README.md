@@ -8,7 +8,11 @@
 	
 	-Enter a date, click filter to get the filtered result.
 
-* UFO-level-2 solved
+* UFO-level-2 
+
+-CLick reset to get the full table.
+
+-To apply filter, enter/select the value and click filter.
 
 #### UFO-level-1 Page
 ![UFO-level-1](wholepage.png)
