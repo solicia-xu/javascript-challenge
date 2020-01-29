@@ -41,33 +41,34 @@ var filterbutton=d3.select('#filter-btn');
 filterbutton.on('click',function(){
     var dateElement=d3.select('#datetime');
     var dateValue=dateElement.property('value');
+    var filtered=tableData;
     // if the filter is not empty, proceed
     if (dateValue!=''){
-        var filtered=tableData.filter(ufo=>ufo.datetime===dateValue);
+        filtered=filtered.filter(ufo=>ufo.datetime===dateValue);
         displaytable(filtered);
     }
     var cityElement=d3.select('#city');
     var cityValue=cityElement.property('value');
     if (cityValue!=''){
-        var filtered=tableData.filter(ufo=>ufo.city===cityValue);
+        filtered=filtered.filter(ufo=>ufo.city===cityValue);
         displaytable(filtered);
     }
     var stateElement=d3.select('#state');
     var stateValue=stateElement.property('value');
     if (stateValue!=''){
-        var filtered=tableData.filter(ufo=>ufo.state===stateValue);
+        filtered=filtered.filter(ufo=>ufo.state===stateValue);
         displaytable(filtered);
     }
     var shapeElement=d3.select('#shape');
     var shapeValue=shapeElement.property('value');
     if (shapeValue!=''){
-        var filtered=tableData.filter(ufo=>ufo.shape===shapeValue);
+        filtered=filtered.filter(ufo=>ufo.shape===shapeValue);
         displaytable(filtered);
     }
     var countryElement=d3.select('#country');
     var countryValue=countryElement.property('value');
     if (countryValue!=''){
-        var filtered=tableData.filter(ufo=>ufo.country===countryValue);
+        filtered=filtered.filter(ufo=>ufo.country===countryValue);
         displaytable(filtered);
     }
     // else {
